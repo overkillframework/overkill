@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>Cameron Cooper</Authors>
+    <Company>Cameron Cooper</Company>
+    <Product>OverkillFramework</Product>
+    <Description>Open Source Robotics Framework</Description>
+    <RepositoryUrl>https://github.com/cameron5906/OverkillFramework</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Version>1.0.7</Version>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+    <PackageReference Include="Xabe.FFmpeg" Version="4.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Overkill.Common\Overkill.Common.csproj" />
+    <ProjectReference Include="..\Overkill.Proxies\Overkill.Proxies.csproj" />
+    <ProjectReference Include="..\Overkill.PubSub\Overkill.PubSub.csproj" />
+    <ProjectReference Include="..\Overkill.Services\Overkill.Services.csproj" />
+  </ItemGroup>
+
+</Project>
